@@ -1,0 +1,127 @@
+/* Base layout and background */
+body {
+    margin: auto;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    background-color: #f4efe8;
+    color: #3e2f1c;
+    width: 90%;
+  }
+  /* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    color: #4a3f35;
+    text-shadow: 1px 1px 0px #e0d6c8;
+  }
+  
+  /* Input form section */
+  #inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+  }
+  
+  /* Label and inputs styling */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    padding: 10px;
+    border: 1px solid #d1c6b7;
+    border-radius: 5px;
+    width: 95%;
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Add Book button */
+  #add-book-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    background-color: #7f5a3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    align-self: flex-start;
+
+  }
+  
+  #add-book-btn:hover {
+    background-color: #684731;
+  }
+  
+  /* Filter button section */
+  #filters {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #filters button {
+    background-color: #a6896d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 7px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+  }
+  
+  #filters button:hover {
+    background-color: #8c725a;
+  }
+  
+  /* Book list layout */
+  #current-book-list > div {
+    background-color: #fffaf3;
+    border-left: 6px solid #c1a17a;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Book details */
+  #current-book-list p {
+    margin: 0 10px;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  
+  /* Delete button */
+  #current-book-list button {
+    background-color: #b03a2e;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #current-book-list button:hover {
+    background-color: #922b21;
+  }
+  
