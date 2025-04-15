@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Reading List App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Reading List App</h1>
+    </header>
+    <form>
+      <section id="inputs">
+        <div id="title">
+          <label for="title-input">Title: </label>
+          <input type="text" id="title-input" />
+        </div>
+        <div id="author">
+          <label for="author-input">Author: </label>
+          <input type="text" id="author-input" />
+        </div>
+        <div id="status">
+          <label for="status-input">Status:</label>
+          <select id="status-input">
+            <option value="Read" id="read-opt">Read</option>
+            <option value="Unread" id="unread-opt">Unread</option>
+          </select>
+        </div>
+      </section>
+    </form>
+    <section id="filters">
+      <button type="button" id="all-btn">All</button>
+      <button type="button" id="read-btn">Read</button>
+      <button type="button" id="unread-btn">Unread</button>
+    </section>
+    <section id="book-list">
+      <div id="current-book-list"></div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
