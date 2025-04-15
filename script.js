@@ -4,10 +4,10 @@ const readBtn = document.querySelector("#read-btn");
 const unreadBtn = document.querySelector("#unread-btn");
 const titleInput = document.querySelector("#title-input");
 const authorInput = document.querySelector("#author-input");
-const readOpt = document.querySelector("#read-opt");
-const unreadOpt = document.querySelector("#unread-opt");
+const statusInput = document.querySelector("#status-input");
 const addBtn = document.querySelector("#add-book-btn");
 
+// This shows the stored books in the localStorage, or if it's empty it will give an empty array.
 const storedBooks = JSON.parse(localStorage.getItem("books")) || [];
 
 // Listen for Enter key press in title input
@@ -28,6 +28,23 @@ authorInput.addEventListener("keydown", (e) => {
 
 // Listen for click on the Add Book button
 addBtn.addEventListener("click", (e) => {
-    e.preventDefault();
+  e.preventDefault();
   addBook();
 });
+
+/* Function: addBook- Adds a new book and updates storage */
+const addBook = () => {
+  const titleName = titleInput.value.trim();
+  const authorName = authorInput.value.trim();
+  const statusOpt = statusInput.value;
+
+  const bookObj = {
+    id: Date.now(),
+    title: titleName,
+    author: authorName,
+    status: statusOpt,
+  };
+
+  bookList.push(bookObj);
+  localStorage.setItem("books", JSON.stringify(bookList));
+};
